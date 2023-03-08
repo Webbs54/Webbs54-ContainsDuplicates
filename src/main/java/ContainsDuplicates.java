@@ -16,13 +16,13 @@ public class ContainsDuplicates {
         for (int i = 0; i < nums.length; i++)
         {
         // return true if a duplicate is found
-            if (set.contains(i)) 
+            if (set.contains(nums[i])) 
             {
                 return true;
             }
  
         // insert element into a set
-            set.add(i);
+            set.add(nums[i]);
         }
  
     // no duplicate is found
